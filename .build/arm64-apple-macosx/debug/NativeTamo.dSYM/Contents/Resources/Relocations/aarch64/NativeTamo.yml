@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo'
+relocations:     []
+...

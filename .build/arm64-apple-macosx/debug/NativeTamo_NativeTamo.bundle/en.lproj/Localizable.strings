@@ -1,0 +1,30 @@
+/* English — Localizable.strings */
+
+// MARK: - App
+"app.title" = "TamoPet";
+
+// MARK: - Mood
+"mood.happy" = "Happy";
+"mood.sad" = "Sad";
+"mood.tired" = "Tired";
+"mood.sleeping" = "Sleeping";
+"mood.gameOver" = "Game Over";
+
+// MARK: - Stats
+"stat.hunger" = "Hunger";
+"stat.happiness" = "Happiness";
+"stat.energy" = "Energy";
+
+// MARK: - Actions
+"action.feed" = "Feed";
+"action.play" = "Play";
+"action.sleep" = "Sleep";
+"action.wake" = "Wake Up";
+"action.restart" = "Restart";
+
+// MARK: - Status Messages
+"status.happy" = "Feeling great! ✨";
+"status.sad" = "Needs some love…";
+"status.tired" = "Running low on energy 💤";
+"status.sleeping" = "Zzz… Recharging (%d%%)";
+"status.gameOver" = "Oh no! Your pet fainted 😵";

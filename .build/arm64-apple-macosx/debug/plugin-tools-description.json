@@ -1,0 +1,462 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+    "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo_NativeTamo.bundle/Info.plist" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/Info.plist"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo_NativeTamo.bundle/Info.plist"
+        }
+      ]
+    },
+    "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo_NativeTamo.bundle/en.lproj/Localizable.strings" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/huyphan/Downloads/native-tamo/Sources/Resources/en.lproj/Localizable.strings"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo_NativeTamo.bundle/en.lproj/Localizable.strings"
+        }
+      ]
+    },
+    "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo_NativeTamo.bundle/vi.lproj/Localizable.strings" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/huyphan/Downloads/native-tamo/Sources/Resources/vi.lproj/Localizable.strings"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo_NativeTamo.bundle/vi.lproj/Localizable.strings"
+        }
+      ]
+    }
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.NativeTamo-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/sources",
+      "importPath" : "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/huyphan/Downloads/native-tamo/Sources/Extensions/Color+Theme.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/huyphan/Downloads/native-tamo/Sources/Extensions/Double+Clamped.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/huyphan/Downloads/native-tamo/Sources/Models/Pet.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/huyphan/Downloads/native-tamo/Sources/NativeTamoApp.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/huyphan/Downloads/native-tamo/Sources/ViewModels/PetViewModel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/huyphan/Downloads/native-tamo/Sources/Views/ContentView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/huyphan/Downloads/native-tamo/Sources/Views/PixelPetView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/huyphan/Downloads/native-tamo/Sources/Views/StatBarView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/DerivedSources/resource_bundle_accessor.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<NativeTamo-arm64-apple-macosx26.0-debug.module-resources>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "NativeTamo",
+      "moduleOutputPath" : "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/Modules/NativeTamo.swiftmodule",
+      "objects" : [
+        "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/Color+Theme.swift.o",
+        "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/Double+Clamped.swift.o",
+        "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/Pet.swift.o",
+        "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/NativeTamoApp.swift.o",
+        "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/PetViewModel.swift.o",
+        "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/ContentView.swift.o",
+        "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/PixelPetView.swift.o",
+        "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/StatBarView.swift.o",
+        "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/resource_bundle_accessor.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx26.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_AVAILABLE",
+        "-module-cache-path",
+        "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "NativeTamo_main",
+        "-color-diagnostics",
+        "-swift-version",
+        "6",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "native_tamo"
+      ],
+      "outputFileMapPath" : "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/Color+Theme.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/Double+Clamped.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/Pet.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/NativeTamoApp.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/PetViewModel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/ContentView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/PixelPetView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/StatBarView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/resource_bundle_accessor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/Modules/NativeTamo.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/huyphan/Downloads/native-tamo/Sources/Extensions/Color+Theme.swift",
+        "/Users/huyphan/Downloads/native-tamo/Sources/Extensions/Double+Clamped.swift",
+        "/Users/huyphan/Downloads/native-tamo/Sources/Models/Pet.swift",
+        "/Users/huyphan/Downloads/native-tamo/Sources/NativeTamoApp.swift",
+        "/Users/huyphan/Downloads/native-tamo/Sources/ViewModels/PetViewModel.swift",
+        "/Users/huyphan/Downloads/native-tamo/Sources/Views/ContentView.swift",
+        "/Users/huyphan/Downloads/native-tamo/Sources/Views/PixelPetView.swift",
+        "/Users/huyphan/Downloads/native-tamo/Sources/Views/StatBarView.swift",
+        "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/DerivedSources/resource_bundle_accessor.swift"
+      ],
+      "tempsPath" : "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "NativeTamo" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "NativeTamo",
+      "-package-name",
+      "native_tamo",
+      "-c",
+      "/Users/huyphan/Downloads/native-tamo/Sources/Extensions/Color+Theme.swift",
+      "/Users/huyphan/Downloads/native-tamo/Sources/Extensions/Double+Clamped.swift",
+      "/Users/huyphan/Downloads/native-tamo/Sources/Models/Pet.swift",
+      "/Users/huyphan/Downloads/native-tamo/Sources/NativeTamoApp.swift",
+      "/Users/huyphan/Downloads/native-tamo/Sources/ViewModels/PetViewModel.swift",
+      "/Users/huyphan/Downloads/native-tamo/Sources/Views/ContentView.swift",
+      "/Users/huyphan/Downloads/native-tamo/Sources/Views/PixelPetView.swift",
+      "/Users/huyphan/Downloads/native-tamo/Sources/Views/StatBarView.swift",
+      "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/DerivedSources/resource_bundle_accessor.swift",
+      "-I",
+      "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx26.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_AVAILABLE",
+      "-module-cache-path",
+      "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "NativeTamo_main",
+      "-color-diagnostics",
+      "-swift-version",
+      "6",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "native_tamo",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "NativeTamo" : [
+
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo-entitlement.plist" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<entitlement-plist>"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<com.apple.security.get-task-allow>"
+        }
+      ],
+      "outputFilePath" : "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo-entitlement.plist"
+    },
+    "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/huyphan/Downloads/native-tamo/Sources/Extensions/Color+Theme.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/huyphan/Downloads/native-tamo/Sources/Extensions/Double+Clamped.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/huyphan/Downloads/native-tamo/Sources/Models/Pet.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/huyphan/Downloads/native-tamo/Sources/NativeTamoApp.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/huyphan/Downloads/native-tamo/Sources/ViewModels/PetViewModel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/huyphan/Downloads/native-tamo/Sources/Views/ContentView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/huyphan/Downloads/native-tamo/Sources/Views/PixelPetView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/huyphan/Downloads/native-tamo/Sources/Views/StatBarView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/DerivedSources/resource_bundle_accessor.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/sources"
+    },
+    "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/Color+Theme.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/ContentView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/Double+Clamped.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/NativeTamoApp.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/Pet.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/PetViewModel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/PixelPetView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/StatBarView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/resource_bundle_accessor.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.product/Objects.LinkFileList"
+    },
+    "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}

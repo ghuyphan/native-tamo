@@ -1,0 +1,30 @@
+/* Vietnamese — Localizable.strings */
+
+// MARK: - App
+"app.title" = "TamoPet";
+
+// MARK: - Mood
+"mood.happy" = "Vui vẻ";
+"mood.sad" = "Buồn";
+"mood.tired" = "Mệt mỏi";
+"mood.sleeping" = "Đang ngủ";
+"mood.gameOver" = "Kết thúc";
+
+// MARK: - Stats
+"stat.hunger" = "Đói";
+"stat.happiness" = "Hạnh phúc";
+"stat.energy" = "Năng lượng";
+
+// MARK: - Actions
+"action.feed" = "Cho ăn";
+"action.play" = "Chơi";
+"action.sleep" = "Ngủ";
+"action.wake" = "Thức dậy";
+"action.restart" = "Chơi lại";
+
+// MARK: - Status Messages
+"status.happy" = "Đang rất vui! ✨";
+"status.sad" = "Cần được quan tâm…";
+"status.tired" = "Sắp hết năng lượng 💤";
+"status.sleeping" = "Zzz… Đang nạp năng lượng (%d%%)";
+"status.gameOver" = "Ôi không! Thú cưng đã ngất 😵";

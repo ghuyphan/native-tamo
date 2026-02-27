@@ -1,0 +1,104 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "NativeTamo-arm64-apple-macosx26.0-debug.exe": ["<NativeTamo-arm64-apple-macosx26.0-debug.exe>"]
+  "NativeTamo-arm64-apple-macosx26.0-debug.module": ["<NativeTamo-arm64-apple-macosx26.0-debug.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "main": ["<NativeTamo-arm64-apple-macosx26.0-debug.exe>","<NativeTamo-arm64-apple-macosx26.0-debug.module>"]
+  "test": ["<NativeTamo-arm64-apple-macosx26.0-debug.exe>","<NativeTamo-arm64-apple-macosx26.0-debug.module>"]
+default: "main"
+nodes:
+  "/Users/huyphan/Downloads/native-tamo/Sources/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo":
+    is-mutated: true
+commands:
+  "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo-entitlement.plist":
+    tool: write-auxiliary-file
+    inputs: ["<entitlement-plist>","<com.apple.security.get-task-allow>"]
+    outputs: ["/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo-entitlement.plist"]
+    description: "Write auxiliary file /Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo-entitlement.plist"
+
+  "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/huyphan/Downloads/native-tamo/Sources/Extensions/Color+Theme.swift","/Users/huyphan/Downloads/native-tamo/Sources/Extensions/Double+Clamped.swift","/Users/huyphan/Downloads/native-tamo/Sources/Models/Pet.swift","/Users/huyphan/Downloads/native-tamo/Sources/NativeTamoApp.swift","/Users/huyphan/Downloads/native-tamo/Sources/ViewModels/PetViewModel.swift","/Users/huyphan/Downloads/native-tamo/Sources/Views/ContentView.swift","/Users/huyphan/Downloads/native-tamo/Sources/Views/PixelPetView.swift","/Users/huyphan/Downloads/native-tamo/Sources/Views/StatBarView.swift","/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/DerivedSources/resource_bundle_accessor.swift"]
+    outputs: ["/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/sources"]
+    description: "Write auxiliary file /Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/sources"
+
+  "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/Color+Theme.swift.o","/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/ContentView.swift.o","/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/Double+Clamped.swift.o","/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/NativeTamoApp.swift.o","/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/Pet.swift.o","/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/PetViewModel.swift.o","/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/PixelPetView.swift.o","/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/StatBarView.swift.o","/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/resource_bundle_accessor.swift.o"]
+    outputs: ["/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.product/Objects.LinkFileList"
+
+  "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo_NativeTamo.bundle/Info.plist":
+    tool: copy-tool
+    inputs: ["/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/Info.plist"]
+    outputs: ["/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo_NativeTamo.bundle/Info.plist"]
+    description: "Copying /Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/Info.plist"
+
+  "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo_NativeTamo.bundle/en.lproj/Localizable.strings":
+    tool: copy-tool
+    inputs: ["/Users/huyphan/Downloads/native-tamo/Sources/Resources/en.lproj/Localizable.strings"]
+    outputs: ["/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo_NativeTamo.bundle/en.lproj/Localizable.strings"]
+    description: "Copying /Users/huyphan/Downloads/native-tamo/Sources/Resources/en.lproj/Localizable.strings"
+
+  "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo_NativeTamo.bundle/vi.lproj/Localizable.strings":
+    tool: copy-tool
+    inputs: ["/Users/huyphan/Downloads/native-tamo/Sources/Resources/vi.lproj/Localizable.strings"]
+    outputs: ["/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo_NativeTamo.bundle/vi.lproj/Localizable.strings"]
+    description: "Copying /Users/huyphan/Downloads/native-tamo/Sources/Resources/vi.lproj/Localizable.strings"
+
+  "/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"]
+    outputs: ["/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+
+  "<NativeTamo-arm64-apple-macosx26.0-debug.exe>":
+    tool: phony
+    inputs: ["<NativeTamo-arm64-apple-macosx26.0-debug.exe-CodeSigning>"]
+    outputs: ["<NativeTamo-arm64-apple-macosx26.0-debug.exe>"]
+
+  "<NativeTamo-arm64-apple-macosx26.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/Color+Theme.swift.o","/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/Double+Clamped.swift.o","/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/Pet.swift.o","/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/NativeTamoApp.swift.o","/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/PetViewModel.swift.o","/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/ContentView.swift.o","/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/PixelPetView.swift.o","/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/StatBarView.swift.o","/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/resource_bundle_accessor.swift.o","/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/Modules/NativeTamo.swiftmodule"]
+    outputs: ["<NativeTamo-arm64-apple-macosx26.0-debug.module>"]
+
+  "C.NativeTamo-arm64-apple-macosx26.0-debug.exe":
+    tool: shell
+    inputs: ["/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/Color+Theme.swift.o","/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/ContentView.swift.o","/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/Double+Clamped.swift.o","/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/NativeTamoApp.swift.o","/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/Pet.swift.o","/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/PetViewModel.swift.o","/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/PixelPetView.swift.o","/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/StatBarView.swift.o","/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/resource_bundle_accessor.swift.o","/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.product/Objects.LinkFileList"]
+    outputs: ["/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo"]
+    description: "Linking ./.build/arm64-apple-macosx/debug/NativeTamo"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-L","/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug","-o","/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo","-module-name","NativeTamo","-Xlinker","-no_warn_duplicate_libraries","-emit-executable","-Xlinker","-alias","-Xlinker","_NativeTamo_main","-Xlinker","_main","-Xlinker","-rpath","-Xlinker","@loader_path","@/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.product/Objects.LinkFileList","-target","arm64-apple-macosx26.0","-Xlinker","-add_ast_path","-Xlinker","/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/Modules/NativeTamo.swiftmodule","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g"]
+
+  "C.NativeTamo-arm64-apple-macosx26.0-debug.exe-entitlements":
+    tool: shell
+    inputs: ["/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo","/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo-entitlement.plist"]
+    outputs: ["<NativeTamo-arm64-apple-macosx26.0-debug.exe-CodeSigning>"]
+    description: "Applying debug entitlements to ./.build/arm64-apple-macosx/debug/NativeTamo"
+    args: ["codesign","--force","--sign","-","--entitlements","/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo-entitlement.plist","/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo"]
+
+  "C.NativeTamo-arm64-apple-macosx26.0-debug.module":
+    tool: shell
+    inputs: ["/Users/huyphan/Downloads/native-tamo/Sources/Extensions/Color+Theme.swift","/Users/huyphan/Downloads/native-tamo/Sources/Extensions/Double+Clamped.swift","/Users/huyphan/Downloads/native-tamo/Sources/Models/Pet.swift","/Users/huyphan/Downloads/native-tamo/Sources/NativeTamoApp.swift","/Users/huyphan/Downloads/native-tamo/Sources/ViewModels/PetViewModel.swift","/Users/huyphan/Downloads/native-tamo/Sources/Views/ContentView.swift","/Users/huyphan/Downloads/native-tamo/Sources/Views/PixelPetView.swift","/Users/huyphan/Downloads/native-tamo/Sources/Views/StatBarView.swift","/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/DerivedSources/resource_bundle_accessor.swift","/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","<NativeTamo-arm64-apple-macosx26.0-debug.module-resources>","/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/sources"]
+    outputs: ["/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/Color+Theme.swift.o","/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/Double+Clamped.swift.o","/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/Pet.swift.o","/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/NativeTamoApp.swift.o","/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/PetViewModel.swift.o","/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/ContentView.swift.o","/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/PixelPetView.swift.o","/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/StatBarView.swift.o","/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/resource_bundle_accessor.swift.o","/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/Modules/NativeTamo.swiftmodule"]
+    description: "Compiling Swift Module 'NativeTamo' (9 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","NativeTamo","-emit-dependencies","-emit-module","-emit-module-path","/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/Modules/NativeTamo.swiftmodule","-output-file-map","/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/output-file-map.json","-incremental","-c","@/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo.build/sources","-I","/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx26.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j8","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_AVAILABLE","-module-cache-path","/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-Xfrontend","-entry-point-function-name","-Xfrontend","NativeTamo_main","-color-diagnostics","-swift-version","6","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","native_tamo"]
+
+  "NativeTamo-arm64-apple-macosx26.0-debug.module-resources":
+    tool: phony
+    inputs: ["/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo_NativeTamo.bundle/en.lproj/Localizable.strings","/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo_NativeTamo.bundle/vi.lproj/Localizable.strings","/Users/huyphan/Downloads/native-tamo/.build/arm64-apple-macosx/debug/NativeTamo_NativeTamo.bundle/Info.plist"]
+    outputs: ["<NativeTamo-arm64-apple-macosx26.0-debug.module-resources>"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/huyphan/Downloads/native-tamo/Sources/","/Users/huyphan/Downloads/native-tamo/Package.swift","/Users/huyphan/Downloads/native-tamo/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+
